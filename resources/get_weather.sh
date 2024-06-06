@@ -12,9 +12,9 @@ ICON_DIR="$SCRIPT_DIR/weather-icons/dark/SagiSan"
 WEATHER_DATA="$SCRIPT_DIR/weather_data"
 
 API_KEY="$OWM_API_KEY" # put your OpenWeatherMap api here https://openweathermap.org/
-CITY_ID="5128581"      # find your city id in the url box https://openweathermap.org/city/2759794
+CITY_ID="2759794"      # find your city id in the url box https://openweathermap.org/city/2759794
 UNITS="metric" # 'metric' for Celsius or 'imperial' for Fahrenheit
-LANG="en"
+LANG="nl"
 #URL="http://api.openweathermap.org/data/2.5/weather?id=${CITY_ID}&appid=${API_KEY}&units=metric"
 WEATHER_RESPONSE=$(curl -s "http://api.openweathermap.org/data/2.5/weather?id=$CITY_ID&appid=$API_KEY&units=$UNITS&lang=$LANG")
 
